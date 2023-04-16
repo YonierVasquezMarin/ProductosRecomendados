@@ -100,7 +100,7 @@ public class ControlProductos {
         ArrayList<String> productosRecomendados = new ArrayList<>();
 
         for (Producto producto : productos) {
-            if (producto.getEdadRecomendada() <= edad && producto.obtenerPrecioTotal() <= precioMaximo) {
+            if (producto.getEdadRecomendada() == edad && producto.obtenerPrecioTotal() <= precioMaximo) {
                 productosRecomendados.add(producto.toString());
             }
         }
