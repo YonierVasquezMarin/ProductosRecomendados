@@ -1,10 +1,15 @@
+package producto;
+
+/**
+ * Producto con nombre, edad recomendada, precio base y proveedor.
+ */
 public class Producto {
     private final String nombre;
     private final int edadRecomendada;
-    private final int precioBase;
+    private final double precioBase;
     private final Proveedor proveedor;
 
-    public Producto(String nombre, int edadRecomendada, int precioBase, Proveedor proveedor) {
+    public Producto(String nombre, int edadRecomendada, double precioBase, Proveedor proveedor) {
         this.nombre = nombre;
         this.edadRecomendada = edadRecomendada;
         this.precioBase = precioBase;
@@ -20,7 +25,7 @@ public class Producto {
      * la suma del precio base y el precio de envío del proveedor
      * @return precio total del producto
      */
-    public int obtenerPrecioTotal() {
+    public double obtenerPrecioTotal() {
         return precioBase + proveedor.getPrecioEnvio();
     }
 

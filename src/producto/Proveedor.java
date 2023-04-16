@@ -1,8 +1,10 @@
+package producto;
+
 public class Proveedor {
     private final String nombre;
-    private final int precioEnvio;
+    private final double precioEnvio;
 
-    public Proveedor(String nombre, int precioEnvio) {
+    public Proveedor(String nombre, double precioEnvio) {
         this.nombre = nombre;
         this.precioEnvio = precioEnvio;
     }
@@ -10,7 +12,7 @@ public class Proveedor {
     public String getNombre() {
         return nombre;
     }
-    public int getPrecioEnvio() {
+    public double getPrecioEnvio() {
         return precioEnvio;
     }
 }

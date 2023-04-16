@@ -1,5 +1,13 @@
+import producto.ControlProductos;
+
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ControlProductos controlProductos = new ControlProductos();
+        //ArrayList<String> productosRecomendados = controlProductos.buscarProductosRecomendados(10, 1000);
+        //for (String producto : productosRecomendados) {
+        //    System.out.println(producto);
+        //}
     }
 }
