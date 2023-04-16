@@ -16,8 +16,12 @@ public class Main {
 
         // Buscar productos recomendados y mostrarlos por consola
         ArrayList<String> productosRecomendados = controlProductos.buscarProductosRecomendados(edad, precioMaximo);
-        for (String producto : productosRecomendados) {
-            System.out.println(producto);
+        if (productosRecomendados.isEmpty()) {
+            System.out.println("No se tiene productos para esa edad o precio");
+        } else {
+            for (String producto : productosRecomendados) {
+                System.out.println(producto);
+            }
         }
     }
 }
